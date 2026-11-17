@@ -10,7 +10,7 @@ on:
   workflow_call:
     inputs:
       runs-on:
-        description: JSON runner selector, e.g. '"ubuntu-latest"' or '["self-hosted","linux","x64","ci"]'.
+        description: JSON runner selector, e.g. '"ubuntu-latest"' or '["self-hosted","linux"]'.
         type: string
         default: '"ubuntu-latest"'
       config-ref:
