@@ -1,5 +1,6 @@
 name: Engineering change
 description: Propose a change with its goal, acceptance criteria and documentation impact.
+type: Task
 body:
   - type: textarea
     id: goal
