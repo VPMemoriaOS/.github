@@ -1,0 +1,47 @@
+name: Engineering change
+description: Propose a change with its goal, acceptance criteria and documentation impact.
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What problem should this issue solve, or what outcome should it produce?
+      placeholder: Describe the intended behavior or result, not the implementation.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: What must be true for this issue to be complete?
+      placeholder: |
+        - Expected behavior or result 1
+        - Expected behavior or result 2
+    validations:
+      required: true
+
+  - type: dropdown
+    id: documentation
+    attributes:
+      label: Documentation
+      description: Does this change need documentation?
+      options:
+        - "Yes: this issue updates the documentation"
+        - "No: no documentation is affected"
+        - "Later: a linked follow-up issue owns the documentation"
+    validations:
+      required: true
+
+  - type: textarea
+    id: documentation_details
+    attributes:
+      label: Documentation details
+      description: What must be documented and where, why none is needed, or which issue owns it.
+      placeholder: "Example: update the README section on configuration."
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Constraints, risks, related issues or anything out of scope.
