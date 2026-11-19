@@ -1,6 +1,7 @@
 config:
   default: true
   MD013: false   # line length: prose is not wrapped
+  MD029: false   # ordered list numbers are content (stable rule and step numbers)
   MD033: false   # inline HTML is allowed
   MD024:         # duplicate headings only among siblings (changelog sections repeat per version)
     siblings_only: true
